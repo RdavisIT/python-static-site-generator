@@ -6,4 +6,4 @@ def main(source="content", dest="dist"):
     config = {"source": source,
               "dest": dest}
 
-    Site(source, dest)
+    Site(**config).build()
